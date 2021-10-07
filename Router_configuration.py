@@ -1,4 +1,3 @@
- ```python
  
 import getpass
 import sys
@@ -175,5 +174,5 @@ tn.write(b'end\n')
 tn.write(b'exit\n')
 line=tn.read_all()
 print (line)
-```
+
 
