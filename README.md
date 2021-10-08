@@ -23,6 +23,18 @@ nano /etc/network/interfaces
 ![image](images/2.1.PNG)
 ##
 
+##
+Now let's check connectivity between this computer and the router using : 
+
+```
+telnet 10.10.1.254
+```
+
+##
+![image](images/2.2.PNG)
+##
+
+
 
 
 :star: Step 1: Router configuration 
