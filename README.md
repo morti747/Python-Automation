@@ -7,7 +7,7 @@ How to configure our network using python scripts.
 
 in this topology, we have a 2 floor appartment with different components, we are going to configure our instruments using python scripts. 
 ##
-<img/images/1.PNG  alt="alt text" width="950" height="550">
+<img,images/1.PNG  alt="alt text" width="950" height="550">
 
 ##
 
