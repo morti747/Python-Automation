@@ -13,4 +13,4 @@ in this topology, we have a 2 floor appartment with different components, we are
 ##
 
 :star: Step 1: 
-# :zap: How this works? :zap: 
+
