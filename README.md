@@ -68,7 +68,7 @@ ls
 And the script ' router.py` is the only script that we'll use to configure our router using the following command: 
 
 ```
-python router.py    
+python Router.py    
 ```
 ```
 (python + our script's name)
@@ -254,4 +254,12 @@ print (line)
 
 ```
 
+Let's check this script first in our computer using: 
 
+```
+nano Router.py
+
+```
+##
+![image](images/3.PNG)
+##
