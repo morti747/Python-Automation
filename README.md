@@ -5,7 +5,7 @@ How to configure our network using python scripts.
 
 
 
-in this topology, we have a 2 floor appartment with different components, we are going to configure our instruments using python scripts. 
+:star: in this topology, we have a 2 floor appartment with different components, we are going to configure our instruments using python scripts. 
 ##
 
 ![image](images/1.PNG)
@@ -13,7 +13,7 @@ in this topology, we have a 2 floor appartment with different components, we are
 ##
 
 ##
-First let's our Admin's IP address: 
+:star: First let's our Admin's IP address: 
 
 ```
 nano /etc/network/interfaces
@@ -24,7 +24,7 @@ nano /etc/network/interfaces
 ##
 
 ##
-Now let's check connectivity between this computer and the router using : 
+:star: Now let's check connectivity between this computer and the router using : 
 
 ```
 telnet 10.10.1.254
@@ -35,7 +35,7 @@ telnet 10.10.1.254
 ##
 
 ##
-Now let's check connectivity between this computer and the internet : 
+:star: Now let's check connectivity between this computer and the internet : 
 
 ```
 ping cisco.com
@@ -45,10 +45,20 @@ ping cisco.com
 ![image](images/2.3.PNG)
 ##
 
+:star: 
+
 
 :star: Step 1: Router configuration 
 
-we are using this python script to configure our router: 
+As you can see there's no connection between our inside local network and the internet. so we are using this python script to configure our router, to create several sub-interfaces on the router and tell it to which VLAN they belong to, to create the DHCP pool for these VLANs and to configure NAT, so our users could have access to the internet.
+
+##
+Here you can find the scrip that we are going to use to do all these configuration just by using this command: 
+
+```
+python router.py    (python + our script's name)
+```
+
 
 ``` python 
 
