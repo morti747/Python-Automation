@@ -64,7 +64,8 @@ ls
 
 ##
 ##
-Here you can find the scrip that we are going to use to do all these configuration just by using this command: 
+
+And the script ' router.py` is the only script that we'll use to configure our router using the following command: 
 
 ```
 python router.py    
