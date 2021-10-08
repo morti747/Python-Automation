@@ -34,7 +34,16 @@ telnet 10.10.1.254
 ![image](images/2.2.PNG)
 ##
 
+##
+Now let's check connectivity between this computer and the internet : 
 
+```
+ping cisco.com
+```
+
+##
+![image](images/2.3.PNG)
+##
 
 
 :star: Step 1: Router configuration 
