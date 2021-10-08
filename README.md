@@ -12,6 +12,19 @@ in this topology, we have a 2 floor appartment with different components, we are
 
 ##
 
+##
+First let's our Admin's IP address: 
+
+```
+nano /etc/network/interfaces
+```
+
+##
+![image](images/2.1.PNG)
+##
+
+
+
 :star: Step 1: Router configuration 
 
 we are using this python script to configure our router: 
