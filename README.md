@@ -56,9 +56,11 @@ As you can see there's no connection between our inside local network and the in
 Here you can find the scrip that we are going to use to do all these configuration just by using this command: 
 
 ```
-python router.py    (python + our script's name)
+python router.py    
 ```
-
+```
+(python + our script's name)
+```
 
 ``` python 
 
