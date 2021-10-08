@@ -263,3 +263,13 @@ nano Router.py
 ##
 ![image](images/3.PNG)
 ##
+
+:star: So let's run it:
+
+
+##
+![image](images/4.PNG)
+##
+##
+![image](images/5.PNG)
+##
