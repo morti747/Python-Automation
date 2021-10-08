@@ -45,13 +45,24 @@ ping cisco.com
 ![image](images/2.3.PNG)
 ##
 
-:star: 
+ 
 
 
 :star: Step 1: Router configuration 
 
 As you can see there's no connection between our inside local network and the internet. so we are using this python script to configure our router, to create several sub-interfaces on the router and tell it to which VLAN they belong to, to create the DHCP pool for these VLANs and to configure NAT, so our users could have access to the internet.
+##
+:star: You can see all scripts that we'r going to use for this project usins:
 
+##
+``
+ls
+``
+##
+![image](images/2.PNG)
+##
+
+##
 ##
 Here you can find the scrip that we are going to use to do all these configuration just by using this command: 
 
