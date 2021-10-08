@@ -10,6 +10,6 @@ in this topology, we have a 2 floor appartment with different components, we are
 <img,images/1.PNG  alt="alt text" width="950" height="550">
 
 ##
-## ![image](images/1.1.PNG)
+## ![image](images/1.PNG)
 
 
