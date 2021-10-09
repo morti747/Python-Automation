@@ -284,8 +284,84 @@ nano Router.py
 
 ##
 
-Now let's start configuration of our switchs. in this topology, we are using VTP to create our VLANs just in switch 1 with server mode, and we'll create all VLANs using Loop feature by the following scripts. but remember that we shoudl first configure our VLAN's interface the way that we can reach it remotely. 
+Now let's start configuration of our switchs. in this topology, we are using VTP to create our VLANs just in switch 1 with server mode, and we'll create all VLANs called (guest, users and servers) using the following scripts. but remember that we shoudl first configure our VLAN's interface the way that we can reach it remotely. 
 
+
+
+```python
+
+
+import getpass
+import sys
+import telnetlib
+import time
+
+Host="10.10.2.253"
+
+user=raw_input(' Enter User name: ')
+password=getpass.getpass()
+
+tn = telnetlib.Telnet(Host)
+tn.read_until(b'Username: ')
+tn.write(user.encode('ascii') + b'\n')
+
+if password:
+    tn.read_until(b'Password: ')
+    tn.write(password.encode('ascii')+b'\n')
+
+time.sleep(2)
+tn.write(b'enable\n')
+time.sleep(2)
+tn.write(b'cisco\n')
+time.sleep(2)
+tn.write(b'config t\n')
+time.sleep(2)
+
+tn.write(b'interface range g0/0-2\n')
+time.sleep(2)
+tn.write(b'switchport trunk encapsulation dot1q\n')
+time.sleep(2)
+tn.write(b'switchport mode trunk\n')
+time.sleep(2)
+
+
+
+tn.write(b'vlan 10\n')
+time.sleep(2)
+tn.write(b"name guest\n")
+time.sleep(2)
+tn.write(b'exit\n')
+time.sleep(2)
+
+tn.write(b'vlan 20\n')
+time.sleep(2)
+tn.write(b"name user\n")
+time.sleep(2)
+tn.write(b'exit\n')
+time.sleep(2)
+
+tn.write(b'vlan 30\n')
+time.sleep(2)
+tn.write(b"name servers\n")
+time.sleep(2)
+tn.write(b'exit\n')
+time.sleep(2)
+
+tn.write(b'vtp mode server\n')
+time.sleep(2)
+tn.write(b'vtp domain morti\n')
+time.sleep(2)
+tn.write(b'vtp password cisco\n')
+time.sleep(2)
+
+
+
+tn.write(b'end\n')
+tn.write(b'exit\n')
+line=tn.read_all()
+print (line)
+
+```
 
 
 
@@ -313,6 +389,39 @@ Ok!
 let's run our script Switch1.py to configure our switch and create our VLANs using following script:  
 
 
+#
+![image](images/13.PNG)
+##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Loop feature by the following scripts. 
 
 ```python 
 
