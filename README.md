@@ -290,8 +290,29 @@ Now let's start configuration of our switchs. in this topology, we are using VTP
 
 
 
-```python
+##
+![image](images/8.PNG)
+##
 
+##
+![image](images/9.PNG)
+##
+
+#
+![image](images/10.PNG)
+##
+
+:star2: Let's check our connection with Switch1: 
+##
+
+#
+![image](images/11.PNG)
+##
+
+Ok! 
+let's run our script Switch1.py to configure our switch and create our VLANs using following script:  
+
+```python
 
 import getpass
 import sys
@@ -335,12 +356,15 @@ time.sleep(2)
 tn.write(b'exit\n')
 time.sleep(2)
 
+
 tn.write(b'vlan 20\n')
 time.sleep(2)
 tn.write(b"name user\n")
 time.sleep(2)
 tn.write(b'exit\n')
 time.sleep(2)
+
+
 
 tn.write(b'vlan 30\n')
 time.sleep(2)
@@ -363,32 +387,12 @@ tn.write(b'exit\n')
 line=tn.read_all()
 print (line)
 
+
+
+
 ```
 
 
-
-
-##
-![image](images/8.PNG)
-##
-
-##
-![image](images/9.PNG)
-##
-
-#
-![image](images/10.PNG)
-##
-
-:star2: Let's check our connection with Switch1: 
-##
-
-#
-![image](images/11.PNG)
-##
-
-Ok! 
-let's run our script Switch1.py to configure our switch and create our VLANs using following script:  
 
 
 #
