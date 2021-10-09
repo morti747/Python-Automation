@@ -467,6 +467,18 @@ print (line)
 
 
 ```
+##
+We can also check our configuration using ```show run ``` command. But here I want to show you the status on our VTP using: 
+
+```
+show vtp status
+```
+to check our configuration. 
+
+##
+##
+![image](images/16.PNG)
+##
 
 ##
 Ok! 
@@ -535,3 +547,28 @@ print (line)
 ##
 ![image](images/15.PNG)
 ##
+
+Let's check our status: 
+
+
+##
+![image](images/17.PNG)
+##
+
+So if it became part of our VTP domain, it should recieve all VLANs created in switch 1, so let's check it: 
+
+```
+show vlan
+```
+
+
+##
+![image](images/18.PNG)
+##
+
+
+
+
+
+
+
