@@ -298,14 +298,20 @@ Now let's start configuration of our switchs. in this topology, we are using VTP
 ![image](images/9.PNG)
 ##
 
-#
+##
 ![image](images/10.PNG)
 ##
+
+
+##
+![image](images/11.1.PNG)
+##
+
 
 :star2: Let's check our connection with Switch1: 
 ##
 
-#
+##
 ![image](images/11.PNG)
 ##
 
