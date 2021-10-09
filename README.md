@@ -309,6 +309,10 @@ Now let's start configuration of our switchs. in this topology, we are using VTP
 ![image](images/11.PNG)
 ##
 
+Ok! 
+let's run our script Switch1.py to configure our switch and create our VLANs using following script:  
+
+
 
 ```
 import getpass
