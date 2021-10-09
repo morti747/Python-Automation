@@ -658,6 +658,25 @@ And our access to the www.cisco.com:
 ![image](images/22.PNG)
 ##
 
+Now we turn on our Linux GUI  to recieve IP address in vlan 10, and we are going to check our connection to the internet: 
 
+```
+ifconfig
+```
 
+##
+![image](images/23.PNG)
+##
 
+let's ping www.cisco.com :
+##
+![image](images/24.PNG)
+##
+
+And finally let's open our browser and open it's website: 
+
+##
+![image](images/25.PNG)
+##
+
+👏 Thank you for following this project
