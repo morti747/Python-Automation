@@ -392,42 +392,16 @@ print (line)
 
 ```
 
-
+###
+🎬 this is the result of our python automation: 
 
 
 #
 ![image](images/13.PNG)
 ##
 
+🌠 there is another way to configue many VLANs using " Loop " feature, here we can use this script as well to create our VLANs and giving them the name according their VLAN number using the following scrip: 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Loop feature by the following scripts. 
 
 ```python 
 
@@ -464,17 +438,6 @@ time.sleep(2)
 tn.write(b'switchport mode trunk\n')
 time.sleep(2)
 
-tn.write(b'vtp mode server\n')
-time.sleep(2)
-tn.write(b'vtp domain morti\n')
-time.sleep(2)
-tn.write(b'vtp password cisco\n')
-time.sleep(2)
-tn.write(b'exit\n')
-time.sleep(2)
-
-
-
 
 for n in range(2,8):
     tn.write(b"vlan " + str(n).encode('ascii') + b"\n")
@@ -482,7 +445,12 @@ for n in range(2,8):
     tn.write(b"name Python_VLAN_" + str(n).encode('ascii') + b"\n")
 
 
-
+tn.write(b'vtp mode server\n')
+time.sleep(2)
+tn.write(b'vtp domain morti\n')
+time.sleep(2)
+tn.write(b'vtp password cisco\n')
+time.sleep(2)
 
 
 tn.write(b'end\n')
