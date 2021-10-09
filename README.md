@@ -396,7 +396,7 @@ print (line)
 🎬 this is the result of our python automation: 
 
 
-#
+##
 ![image](images/13.PNG)
 ##
 
@@ -460,5 +460,15 @@ print (line)
 
 
 ```
+
+##
+Ok! 
+let's run our script Switch1.py to configure our switch and create our VLANs:
+
+##
+
+##
+![image](images/14.PNG)
+##
 
 
