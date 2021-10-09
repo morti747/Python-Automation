@@ -302,6 +302,7 @@ Now let's start configuration of our switchs. in this topology, we are using VTP
 ![image](images/10.PNG)
 ##
 
+:star: Now we can check one more time if we can reach the www.cisco.com & www.google.com or not: 
 
 ##
 ![image](images/11.1.PNG)
