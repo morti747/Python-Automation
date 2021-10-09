@@ -13,7 +13,7 @@ How to configure our network using python scripts.
 ##
 
 ##
-:star: First let's our Admin's IP address: 
+:star: First let's our computer's NIC and IP address: 
 
 ```
 nano /etc/network/interfaces
