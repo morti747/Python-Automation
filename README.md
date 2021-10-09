@@ -314,7 +314,8 @@ let's run our script Switch1.py to configure our switch and create our VLANs usi
 
 
 
-```
+```python 
+
 import getpass
 import sys
 import telnetlib
