@@ -284,7 +284,7 @@ nano Router.py
 
 ##
 
-Now let's start configuration of our switchs. in this topology, we are using VTP to create our VLANs just in switch 1 with server mode, and we'll create all VLANs called (guest, users, servers) here using the following scripts. but remember that we shoudl first configure our VLAN's interface the way that we can reach it remotely. 
+Now let's start configuration of our switchs. in this topology, we are using VTP to create our VLANs just in switch 1 with server mode, and we'll create all VLANs using Loop feature by the following scripts. but remember that we shoudl first configure our VLAN's interface the way that we can reach it remotely. 
 
 
 
@@ -358,33 +358,23 @@ time.sleep(2)
 tn.write(b'exit\n')
 time.sleep(2)
 
-tn.write(b'vlan 10\n')
-time.sleep(2)
-tn.write(b'name guest\n')
-time.sleep(2)
-tn.write(b'exit\n')
-time.sleep(2)
 
 
-tn.write(b'vlan 20\n')
-time.sleep(2)
-tn.write(b'name users\n')
-time.sleep(2)
-tn.write(b'exit\n')
-time.sleep(2)
 
-tn.write(b'vlan 30\n')
-time.sleep(2)
-tn.write(b'name server\n')
-time.sleep(2)
-tn.write(b'exit\n')
-time.sleep(2)
+for n in range(2,8):
+    tn.write(b"vlan " + str(n).encode('ascii') + b"\n")
+    time.sleep(2)
+    tn.write(b"name Python_VLAN_" + str(n).encode('ascii') + b"\n")
+
+
+
 
 
 tn.write(b'end\n')
 tn.write(b'exit\n')
 line=tn.read_all()
 print (line)
+
 
 ```
 
