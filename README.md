@@ -52,7 +52,7 @@ ping cisco.com
 
 As you can see there's no connection between our inside local network and the internet. so we are using this python script to configure our router, to create several sub-interfaces on the router and tell it to which VLAN they belong to, to create the DHCP pool for these VLANs and to configure NAT, so our users could have access to the internet.
 ##
-:star: You can see all scripts that we'r going to use for this project usins:
+:star: You can see all scripts that we'r going to use for this project using ls command:
 
 ##
 ``
