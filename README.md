@@ -279,6 +279,32 @@ nano Router.py
 ![image](images/7.PNG)
 ##
 
+##
+:star: Now you can see that this user can reach the cisco.com, which means that we have access to internet.
+
+##
+
+Now let's start configuration of our switchs. in this topology, we are using VTP to create our VLANs just in switch 1 with server mode, and we'll create all VLANs called (guest, users, servers) here using the following scripts. but remember that we shoudl first configure our VLAN's interface the way that we can reach it remotely. 
+
+
+
+
+
+##
+![image](images/8.PNG)
+##
+
+##
+![image](images/9.PNG)
+##
+
+#
+![image](images/10.PNG)
+##
+
+
+
+
 ```
 import getpass
 import sys
@@ -308,29 +334,6 @@ time.sleep(2)
 
 tn.write(b'interface range g0/0-2\n')
 time.sleep(2)
-tn.write(b'switchport trunk encapsulation dot1q\n')
-time.sleep(2)
-tn.write(b'switchport mode trunk\n')
-time.sleep(2)
-
-tn.write(b'vtp mode server\n')
-time.sleep(2)
-tn.write(b'vtp domain morti\n')
-time.sleep(2)
-tn.write(b'vtp password cisco\n')
-time.sleep(2)
-tn.write(b'exit\n')
-time.sleep(2)
-
-tn.write(b'vlan 10\n')
-time.sleep(2)
-tn.write(b'name guest\n')
-time.sleep(2)
-tn.write(b'exit\n')
-time.sleep(2)
-
-
-
 tn.write(b'switchport trunk encapsulation dot1q\n')
 time.sleep(2)
 tn.write(b'switchport mode trunk\n')
